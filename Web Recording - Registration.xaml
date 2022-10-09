@@ -1,0 +1,319 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Web_Recording___Registration" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="620.8,3215.2" sap2010:WorkflowViewState.IdRef="Web_Recording___Registration_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="28">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="22">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Web_Recording___Registration" sap:VirtualizedContainerService.HintSize="549.6,3150.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:UiElement" Name="foundElement" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Web" sap:VirtualizedContainerService.HintSize="508,2801.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open file:///C:/Users/Simmi%20Anand/Desktop/UiPath%20RPA%20Design%20and%20Development%20v4/133467-UIPath%20v4/TrainingProject/Input/User%20Registration.html" sap:VirtualizedContainerService.HintSize="466.4,2321.6" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="file:///C:/Users/Simmi%20Anand/Desktop/UiPath%20RPA%20Design%20and%20Development%20v4/133467-UIPath%20v4/TrainingProject/Input/User%20Registration.html">
+        <ui:OpenBrowser.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416.8,2219.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  login'" EmptyField="False" sap:VirtualizedContainerService.HintSize="375.2,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="False" SimulateType="True" Text="Admin">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2aae59c9-05ba-4769-ac14-0a3dfd8db9f7" InformativeScreenshot="c44db0a798045d51a6cfeb3c03ea2726" Selector="&lt;webctrl tag='INPUT' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:TypeInto.Target>
+              </ui:TypeInto>
+              <Sequence DisplayName="Type password" sap:VirtualizedContainerService.HintSize="375.2,290.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="Password" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQ5wA/PchQEC78GjEeaFHMAAAAAACAAAAAAAQZgAAAAEAACAAAAAxZ+SYsUl8pIsNRBLQo3a00p4rDWxEnWa2SGMGw3eJQwAAAAAOgAAAAAIAACAAAAAuqQvxHsNrP5spwWclbGbAjQH78Xmzw/JLUEZuFOeBFxAAAABn/jdG8TC92yhth0nVY8bOQAAAAAZsm8QxkS+vFsr5Rqo4g5Ft6YxpRGsl/VmrHduSGPeHawrJPCBYL7wFAyec8yzDE9HBp/8qOXnRjl01On3xomc=" Result="[Password]" />
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  password'" EmptyField="False" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="False" SimulateType="True" Text="[Password]">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b563f5e8-2454-4769-8873-6460a93349fd" InformativeScreenshot="918f02bfc0e506ff8bfd2ea819045d4f" Selector="&lt;webctrl tag='INPUT' type='password' /&gt;" WaitForReady="COMPLETE">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+              </Sequence>
+              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  email'" EmptyField="False" sap:VirtualizedContainerService.HintSize="375.2,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_3" SendWindowMessages="False" SimulateType="True" Text="admin@test.com">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="73f08530-6914-469b-8c96-e17c3360b91b" InformativeScreenshot="ddba3ef99a0fa481fa6859d823c88b5c" Selector="&lt;webctrl id='email' tag='INPUT' type='text' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:TypeInto.Target>
+              </ui:TypeInto>
+              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="False" sap:VirtualizedContainerService.HintSize="375.2,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_4" SendWindowMessages="False" SimulateType="True" Text="Admin">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1331fed7-ffec-482b-8450-fc18a51c87cd" InformativeScreenshot="bb26ab555772386bcb07a83aed0bcb98" Selector="&lt;webctrl name='fname' tableRow='3' tag='INPUT' type='text' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:TypeInto.Target>
+              </ui:TypeInto>
+              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="False" sap:VirtualizedContainerService.HintSize="375.2,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_5" SendWindowMessages="False" SimulateType="True" Text="KSPL">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="64e177fd-8c3b-4384-bc23-6967ec2e0c03" InformativeScreenshot="5f4c98e0e3df72d2c9747f41b81331f6" Selector="&lt;webctrl name='lname' tag='INPUT' type='text' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:TypeInto.Target>
+              </ui:TypeInto>
+              <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Check" DisplayName="Check 'INPUT'" sap:VirtualizedContainerService.HintSize="375.2,107.2" sap2010:WorkflowViewState.IdRef="Check_1">
+                <ui:Check.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="48e03ec6-129d-4015-9338-48d945605e97" InformativeScreenshot="627513bf4ffc95feb675cad3692632de" Selector="&lt;webctrl name='female' tag='INPUT' type='radio' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:Check.Target>
+              </ui:Check>
+              <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Check" DisplayName="Check 'INPUT'" sap:VirtualizedContainerService.HintSize="375.2,107.2" sap2010:WorkflowViewState.IdRef="Check_2">
+                <ui:Check.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9996b64d-ad5e-425c-817b-8d915b076112" InformativeScreenshot="5f80cea10a9f935a8ae78bfb8adc4398" Selector="&lt;webctrl tag='INPUT' type='checkbox' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:Check.Target>
+              </ui:Check>
+              <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT'" sap:VirtualizedContainerService.HintSize="375.2,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="Kosher">
+                <ui:SelectItem.Items>
+                  <scg:List x:TypeArguments="x:String" Capacity="8">
+                    <x:String>Vegetrarian</x:String>
+                    <x:String>Non-Vegetarian</x:String>
+                    <x:String>Kosher</x:String>
+                    <x:String>Jain Food</x:String>
+                    <x:String>Child Meal</x:String>
+                    <x:String>Medical Meal</x:String>
+                  </scg:List>
+                </ui:SelectItem.Items>
+                <ui:SelectItem.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6fdd5606-bc61-44d8-a334-92c437b333b4" InformativeScreenshot="8465803842105c2f64fb5a05a1fc49f5" Selector="&lt;webctrl tag='SELECT' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:SelectItem.Target>
+              </ui:SelectItem>
+              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'TEXTAREA'" EmptyField="True" sap:VirtualizedContainerService.HintSize="375.2,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_6" SendWindowMessages="False" SimulateType="True" Text="Sample">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b5c0add9-c821-4d5a-ad1b-275ce5f6c520" InformativeScreenshot="511e65f643efd9404825e2a1bf08484f" Selector="&lt;webctrl tag='TEXTAREA' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:TypeInto.Target>
+              </ui:TypeInto>
+              <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'chrome.exe User'" sap:VirtualizedContainerService.HintSize="375.2,156" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:ClickImage.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:ClickImage.CursorPosition>
+                <ui:ClickImage.Image>
+                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.25" Profile="Basic" TargetImageBase64="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" />
+                </ui:ClickImage.Image>
+                <ui:ClickImage.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7587471c-873b-4617-b8bc-4ca8bec628d8" Selector="&lt;webctrl aaname=' &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;' tag='DIV' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:ClickImage.Target>
+              </ui:ClickImage>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  OK'" sap:VirtualizedContainerService.HintSize="375.2,107.2" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f139ece1-1b5c-4457-871b-54fda416fc79" InformativeScreenshot="7dd95b89a34bdfd306a20866eb1f5764" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='User Registration - Google Chrome' /&gt;&lt;ctrl name='This page says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="375.2,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition OffsetX="46" OffsetY="13" Position="TopLeft" />
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4827df01-0055-484d-b456-703f73b85c4f" InformativeScreenshot="883bce1eebd051188afe27dc017abe9a" Selector="&lt;webctrl tag='INPUT' type='button' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+            </Sequence>
+          </ActivityAction>
+        </ui:OpenBrowser.Body>
+      </ui:OpenBrowser>
+      <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'UserRegis Chrome_wi'" sap:VirtualizedContainerService.HintSize="466.4,347.2" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="5ac01340f171538ceb9ec89b7bf38166" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='User Registration - Google Chrome' /&gt;">
+        <ui:WindowScope.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,200" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  OK'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition OffsetX="55" OffsetY="22" Position="TopLeft" />
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4015d5e9-b52f-42e6-9d0d-318178ad7a9c" InformativeScreenshot="33db780f3fbec9006b343a06f08e904c" Selector="&lt;ctrl name='This page says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+            </Sequence>
+          </ActivityAction>
+        </ui:WindowScope.Body>
+      </ui:WindowScope>
+    </Sequence>
+    <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" ContinueOnError="False" DisplayName="Find Element 'A  https://cloud.uipath...'" FoundElement="[foundElement]" sap:VirtualizedContainerService.HintSize="508,107.2" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+      <ui:WaitUiElementAppear.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e5b2b62b-b9da-4f8c-87fe-9bde0d876cd1" InformativeScreenshot="af903c7b7be1ca543d5acfbc7509c159" Selector="&lt;html app='chrome.exe' title='Automation Platform - Leading RPA Company | UiPath' /&gt;&lt;webctrl aaname='Sign In' tag='A' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:WaitUiElementAppear.Target>
+    </ui:WaitUiElementAppear>
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" sap:VirtualizedContainerService.HintSize="508,68.8" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[foundElement]" Id="d84ddffc-3eee-47a4-98fe-dc2fbf3e2b3a">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+  </Sequence>
+</Activity>
