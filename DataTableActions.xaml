@@ -1,0 +1,146 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="DataTableActions" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1130.4,2989.6" sap2010:WorkflowViewState.IdRef="DataTableActions_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="52">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="17">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="DataTableActions" sap:VirtualizedContainerService.HintSize="550.4,2924.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="HRContacts" />
+      <Variable x:TypeArguments="x:String" Name="strContacts" />
+      <Variable x:TypeArguments="sd:DataTable" Name="FilterdTbl" />
+      <Variable x:TypeArguments="sd:DataTable" Name="ITContacts" />
+      <Variable x:TypeArguments="x:Int32" Name="LastRowITID" />
+      <Variable x:TypeArguments="x:Int32" Name="LastRowHRID" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BuildDataTable DataTable="[HRContacts]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="508.8,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ID&quot; msdata:AutoIncrement=&quot;true&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Phone_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:long&quot; default=&quot;0&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;City&quot; msdata:Caption=&quot;&quot; default=&quot;Delhi&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;20&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Email&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;      &lt;xs:unique name=&quot;Constraint1&quot;&gt;&#xD;&#xA;        &lt;xs:selector xpath=&quot;.//TableName&quot; /&gt;&#xD;&#xA;        &lt;xs:field xpath=&quot;ID&quot; /&gt;&#xD;&#xA;      &lt;/xs:unique&gt;&#xD;&#xA;      &lt;xs:unique name=&quot;Constraint2&quot;&gt;&#xD;&#xA;        &lt;xs:selector xpath=&quot;.//TableName&quot; /&gt;&#xD;&#xA;        &lt;xs:field xpath=&quot;Phone_x0020_Number&quot; /&gt;&#xD;&#xA;      &lt;/xs:unique&gt;&#xD;&#xA;      &lt;xs:unique name=&quot;Constraint3&quot;&gt;&#xD;&#xA;        &lt;xs:selector xpath=&quot;.//TableName&quot; /&gt;&#xD;&#xA;        &lt;xs:field xpath=&quot;Email&quot; /&gt;&#xD;&#xA;      &lt;/xs:unique&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;ID&gt;1&lt;/ID&gt;&#xD;&#xA;    &lt;Name&gt;John&lt;/Name&gt;&#xD;&#xA;    &lt;Phone_x0020_Number&gt;8327119111&lt;/Phone_x0020_Number&gt;&#xD;&#xA;    &lt;City&gt;Delhi&lt;/City&gt;&#xD;&#xA;    &lt;Email&gt;John@mail.com&lt;/Email&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;ID&gt;2&lt;/ID&gt;&#xD;&#xA;    &lt;Name&gt;Peter&lt;/Name&gt;&#xD;&#xA;    &lt;Phone_x0020_Number&gt;8913717119&lt;/Phone_x0020_Number&gt;&#xD;&#xA;    &lt;City&gt;Goa&lt;/City&gt;&#xD;&#xA;    &lt;Email&gt;Peter@mail.com&lt;/Email&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;ID&gt;3&lt;/ID&gt;&#xD;&#xA;    &lt;Name&gt;Dan&lt;/Name&gt;&#xD;&#xA;    &lt;Phone_x0020_Number&gt;74893748389&lt;/Phone_x0020_Number&gt;&#xD;&#xA;    &lt;City&gt;Goa&lt;/City&gt;&#xD;&#xA;    &lt;Email&gt;Dan@mail.com&lt;/Email&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;ID&gt;4&lt;/ID&gt;&#xD;&#xA;    &lt;Name&gt;Henry&lt;/Name&gt;&#xD;&#xA;    &lt;Phone_x0020_Number&gt;74893748388&lt;/Phone_x0020_Number&gt;&#xD;&#xA;    &lt;City&gt;Delhi&lt;/City&gt;&#xD;&#xA;    &lt;Email&gt;Henry@mail.com&lt;/Email&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;ID&gt;5&lt;/ID&gt;&#xD;&#xA;    &lt;Name&gt;Sam&lt;/Name&gt;&#xD;&#xA;    &lt;Phone_x0020_Number&gt;98372900930&lt;/Phone_x0020_Number&gt;&#xD;&#xA;    &lt;City&gt;Delhi&lt;/City&gt;&#xD;&#xA;    &lt;Email&gt;Sam@mail.com&lt;/Email&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:OutputDataTable DataTable="[HRContacts]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="508.8,80.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[strContacts]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="508.8,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[strContacts]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="508.8,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="-----Below are phone numbers-----" />
+    <ui:FilterDataTable DataTable="[HRContacts]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="508.8,162.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[FilterdTbl]" SelectColumnsMode="Keep">
+      <ui:FilterDataTable.Filters>
+        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+          <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["City"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+            <ui:FilterOperationArgument.Operand>
+              <InArgument x:TypeArguments="x:String">["Delhi"]</InArgument>
+            </ui:FilterOperationArgument.Operand>
+          </ui:FilterOperationArgument>
+        </scg:List>
+      </ui:FilterDataTable.Filters>
+      <ui:FilterDataTable.SelectColumns>
+        <scg:List x:TypeArguments="InArgument" Capacity="4">
+          <InArgument x:TypeArguments="x:String">["Phone Number"]</InArgument>
+        </scg:List>
+      </ui:FilterDataTable.SelectColumns>
+    </ui:FilterDataTable>
+    <ui:OutputDataTable DataTable="[FilterdTbl]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="508.8,80.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_2" Text="[strContacts]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="508.8,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[strContacts]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="508.8,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_5" Text="-----Below are phone numbers after adding row-----" />
+    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{Nothing, &quot;Hary&quot;, 8312345511, &quot;Goa&quot;}]" DataTable="[HRContacts]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="508.8,188" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+    <ui:OutputDataTable DataTable="[HRContacts]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="508.8,80.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_3" Text="[strContacts]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="508.8,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[strContacts]" />
+    <ui:BuildDataTable DataTable="[ITContacts]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="508.8,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ID&quot; msdata:AutoIncrement=&quot;true&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Phone_x0020_Number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:long&quot; default=&quot;0&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;City&quot; msdata:Caption=&quot;&quot; default=&quot;Delhi&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;20&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Department&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;      &lt;xs:unique name=&quot;Constraint1&quot;&gt;&#xD;&#xA;        &lt;xs:selector xpath=&quot;.//TableName&quot; /&gt;&#xD;&#xA;        &lt;xs:field xpath=&quot;ID&quot; /&gt;&#xD;&#xA;      &lt;/xs:unique&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;ID&gt;1&lt;/ID&gt;&#xD;&#xA;    &lt;Name&gt;Johhny&lt;/Name&gt;&#xD;&#xA;    &lt;Phone_x0020_Number&gt;8327119111&lt;/Phone_x0020_Number&gt;&#xD;&#xA;    &lt;City&gt;Delhi&lt;/City&gt;&#xD;&#xA;    &lt;Department&gt;IT&lt;/Department&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;ID&gt;2&lt;/ID&gt;&#xD;&#xA;    &lt;Name&gt;Mark&lt;/Name&gt;&#xD;&#xA;    &lt;Phone_x0020_Number&gt;8913717119&lt;/Phone_x0020_Number&gt;&#xD;&#xA;    &lt;City&gt;Goa&lt;/City&gt;&#xD;&#xA;    &lt;Department&gt;IT&lt;/Department&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;ID&gt;3&lt;/ID&gt;&#xD;&#xA;    &lt;Name&gt;Jacob&lt;/Name&gt;&#xD;&#xA;    &lt;Phone_x0020_Number&gt;74893748389&lt;/Phone_x0020_Number&gt;&#xD;&#xA;    &lt;City&gt;Goa&lt;/City&gt;&#xD;&#xA;    &lt;Department&gt;IT&lt;/Department&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;ID&gt;4&lt;/ID&gt;&#xD;&#xA;    &lt;Name&gt;Peter&lt;/Name&gt;&#xD;&#xA;    &lt;Phone_x0020_Number&gt;74893748388&lt;/Phone_x0020_Number&gt;&#xD;&#xA;    &lt;City&gt;Delhi&lt;/City&gt;&#xD;&#xA;    &lt;Department&gt;IT&lt;/Department&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;ID&gt;5&lt;/ID&gt;&#xD;&#xA;    &lt;Name&gt;Pam&lt;/Name&gt;&#xD;&#xA;    &lt;Phone_x0020_Number&gt;98372900930&lt;/Phone_x0020_Number&gt;&#xD;&#xA;    &lt;City&gt;Delhi&lt;/City&gt;&#xD;&#xA;    &lt;Department&gt;IT&lt;/Department&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <Assign sap:VirtualizedContainerService.HintSize="508.8,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[LastRowITID]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">[ITContacts.RowCount]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="508.8,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[LastRowHRID]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">[HRContacts.RowCount]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[HRContacts]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="508.8,501.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="475.2,385.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:UpdateRowItem ColumnName="{x:Null}" ColumnIndex="0" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="433.6,192.8" sap2010:WorkflowViewState.IdRef="UpdateRowItem_1" Row="[CurrentRow]" Value="[LastRowHRID + 1]" />
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[LastRowHRID]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[LastRowHRID + 1]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+    <ui:MergeDataTable Destination="[ITContacts]" DisplayName="Merge Data Table" sap:VirtualizedContainerService.HintSize="508.8,134.4" sap2010:WorkflowViewState.IdRef="MergeDataTable_1" MissingSchemaAction="AddWithKey" Source="[HRContacts]" />
+    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{Nothing, &quot;Test&quot;, 71612981,&quot;Delhi&quot;, &quot;Sam@mail.com&quot;}]" DataTable="[ITContacts]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="508.8,188" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+    <ui:OutputDataTable DataTable="[ITContacts]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="508.8,80.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_4" Text="[strContacts]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="508.8,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="[strContacts]" />
+  </Sequence>
+</Activity>
